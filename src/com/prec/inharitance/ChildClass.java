@@ -4,10 +4,14 @@ public class ChildClass extends ParentClass{
 
 	public void childMethod(){
 		System.out.println("I am child");
+		
+		iAmDefaultMethod();
+		protectedMethod();
 		printMe();
 		
-		protectedMethod();
 		
 	}
+	
+	
 	
 }
