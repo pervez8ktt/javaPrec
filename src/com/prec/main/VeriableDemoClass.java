@@ -31,5 +31,20 @@ public class VeriableDemoClass {
 		
 		System.out.println("VeribaleDemo b: "+VeriableDemoClass.b);
 		
+		
+		String[]name = {"Ram","Shyaam", "Shiv" , "Lakhman"};
+		
+		for(int i =0; i< name.length; i++){
+			String s = name[i];
+			System.out.println(s);
+		}
+		
+		for(int i =3; i>= 0; i--){
+			System.out.println(name[i]);
+		}
+		
+		for(String s : name){
+			System.out.println(s);
+		}
 	}
 }
