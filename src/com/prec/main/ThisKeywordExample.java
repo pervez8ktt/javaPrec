@@ -9,6 +9,12 @@ public class ThisKeywordExample {
 	}
 	
 	
+	public ThisKeywordExample returnCurrentObject(){
+		this.age += 15;
+		
+		return this;
+	}
+	
 	public static void main(String[] args) {
 		
 		ThisKeywordExample k1 = new ThisKeywordExample();
@@ -23,6 +29,12 @@ public class ThisKeywordExample {
 		k2.printAge();
 		
 		
+		k1 = k1.returnCurrentObject();
+		
+		k2 = k2.returnCurrentObject();
+		
+		k1.printAge();
+		k2.printAge();
 		
 	}
 }
