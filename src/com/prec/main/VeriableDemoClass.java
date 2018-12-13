@@ -10,7 +10,14 @@ public class VeriableDemoClass {
 	
 	static int b;
 	
+	public static void printAge(ThisKeywordExample keywordExample){
+		System.out.println("The age is "+keywordExample.age);
+	}
+	
 	public static void main(String args[]){
+		
+		VeriableDemoClass.b = 5;
+		
 		VeriableDemoClass v1 = new VeriableDemoClass();
 		
 		v1.a = 10;
@@ -47,4 +54,9 @@ public class VeriableDemoClass {
 			System.out.println(s);
 		}
 	}
+	
+	public static class InnerClass{
+		
+	}
+	
 }
