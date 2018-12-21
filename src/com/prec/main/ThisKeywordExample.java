@@ -1,5 +1,7 @@
 package com.prec.main;
 
+import com.prec.main.VeriableDemoClass.InnerClass;
+
 public class ThisKeywordExample {
 
 	int age;
@@ -36,5 +38,15 @@ public class ThisKeywordExample {
 		k1.printAge();
 		k2.printAge();
 		
+	}
+	
+	
+	public class innerClass{
+		int age;
+		
+		public void printAge(){
+			System.out.println("Inner class age : "+this.age);
+			System.out.println("ThisKeywordExample class age : "+ThisKeywordExample.this.age);
+		}
 	}
 }
